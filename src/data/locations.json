@@ -1,0 +1,142 @@
+{
+  "campus": "Sri Sairam Institute of Technology",
+  "locations": [
+    {
+      "id": "entrance",
+      "name": "Main Entrance Gate",
+      "shortName": "Entrance",
+      "icon": "🏛️",
+      "description": "The grand entrance to Sri Sairam campus. Security check point and visitor registration.",
+      "category": "Gateway",
+      "floor": "Ground",
+      "coordinates": { "x": 50, "y": 90 },
+      "color": "#00f5d4",
+      "steps": [
+        { "instruction": "Face the main road", "direction": "straight", "distance": "0m", "landmark": "You are at the Main Gate" },
+        { "instruction": "Walk straight through the gate", "direction": "straight", "distance": "50m", "landmark": "Pass security checkpoint" },
+        { "instruction": "Continue ahead on the main path", "direction": "straight", "distance": "30m", "landmark": "Campus flag post on your left" },
+        { "instruction": "You have arrived", "direction": "arrived", "distance": "0m", "landmark": "Welcome to Sri Sairam!" }
+      ]
+    },
+    {
+      "id": "blockA",
+      "name": "A Block",
+      "shortName": "Block A",
+      "icon": "🏢",
+      "description": "Department of Information Technology & Computer Science. Houses faculty rooms, smart classrooms and department office.",
+      "category": "Academic",
+      "floor": "Ground to 4th",
+      "coordinates": { "x": 25, "y": 40 },
+      "color": "#00b4d8",
+      "steps": [
+        { "instruction": "Walk straight from main road", "direction": "straight", "distance": "80m", "landmark": "Enter campus through main gate" },
+        { "instruction": "Turn left at the fountain", "direction": "left", "distance": "40m", "landmark": "Central fountain on your right" },
+        { "instruction": "Go straight ahead", "direction": "straight", "distance": "60m", "landmark": "Admin block on your left" },
+        { "instruction": "Turn right at the junction", "direction": "right", "distance": "20m", "landmark": "Notice board ahead" },
+        { "instruction": "You have arrived at A Block", "direction": "arrived", "distance": "0m", "landmark": "A Block entrance" }
+      ]
+    },
+    {
+      "id": "blockB",
+      "name": "B Block",
+      "shortName": "Block B",
+      "icon": "🏗️",
+      "description": "Department of Electronics & Communication Engineering. Labs and seminar halls located here.",
+      "category": "Academic",
+      "floor": "Ground to 3rd",
+      "coordinates": { "x": 75, "y": 40 },
+      "color": "#7209b7",
+      "steps": [
+        { "instruction": "Go straight from the gate", "direction": "straight", "distance": "100m", "landmark": "Pass the main building" },
+        { "instruction": "Turn right at the canteen", "direction": "right", "distance": "50m", "landmark": "Canteen on your left" },
+        { "instruction": "Walk straight ahead", "direction": "straight", "distance": "80m", "landmark": "Open ground on right" },
+        { "instruction": "You have arrived at B Block", "direction": "arrived", "distance": "0m", "landmark": "B Block signboard" }
+      ]
+    },
+    {
+      "id": "lab",
+      "name": "Computer Lab (CC2)",
+      "shortName": "CC2 Lab",
+      "icon": "💻",
+      "description": "State-of-the-art computer lab with 120 workstations, high-speed internet and latest development tools.",
+      "category": "Lab",
+      "floor": "2nd Floor, C Block",
+      "coordinates": { "x": 45, "y": 55 },
+      "color": "#f72585",
+      "steps": [
+        { "instruction": "Enter campus and go straight", "direction": "straight", "distance": "60m", "landmark": "Library building visible ahead" },
+        { "instruction": "Take the path beside the library", "direction": "right", "distance": "30m", "landmark": "Library on your left" },
+        { "instruction": "Enter C Block ground floor", "direction": "straight", "distance": "20m", "landmark": "C Block entrance" },
+        { "instruction": "Take the stairs to 2nd floor", "direction": "straight", "distance": "15m", "landmark": "Staircase on the right of entrance" },
+        { "instruction": "Turn left at the top of stairs", "direction": "left", "distance": "30m", "landmark": "Corridor with blue doors" },
+        { "instruction": "CC2 Lab is the third door", "direction": "arrived", "distance": "0m", "landmark": "CC2 Lab — door marked in blue" }
+      ]
+    },
+    {
+      "id": "library",
+      "name": "Central Library",
+      "shortName": "Library",
+      "icon": "📚",
+      "description": "Sri Sairam's multi-storey digital and physical library. Houses 50,000+ books and e-resources.",
+      "category": "Resource",
+      "floor": "Ground to 2nd",
+      "coordinates": { "x": 60, "y": 60 },
+      "color": "#fb8500",
+      "steps": [
+        { "instruction": "Walk straight from the main gate", "direction": "straight", "distance": "70m", "landmark": "Central path, campus map board on left" },
+        { "instruction": "The Library is straight ahead", "direction": "straight", "distance": "30m", "landmark": "Library dome visible" },
+        { "instruction": "You have arrived at the Library", "direction": "arrived", "distance": "0m", "landmark": "Library main entrance with steps" }
+      ]
+    },
+    {
+      "id": "canteen",
+      "name": "Main Canteen",
+      "shortName": "Canteen",
+      "icon": "🍽️",
+      "description": "Sri Sairam main cafeteria serving breakfast, lunch and snacks. Capacity for 500 students.",
+      "category": "Food",
+      "floor": "Ground",
+      "coordinates": { "x": 80, "y": 65 },
+      "color": "#ffbe0b",
+      "steps": [
+        { "instruction": "From the main gate go straight", "direction": "straight", "distance": "90m", "landmark": "Admin block in sight" },
+        { "instruction": "Turn right after admin block", "direction": "right", "distance": "40m", "landmark": "Admin block on left" },
+        { "instruction": "Walk toward the green building", "direction": "straight", "distance": "60m", "landmark": "Green canteen building ahead" },
+        { "instruction": "You have reached the Canteen", "direction": "arrived", "distance": "0m", "landmark": "Canteen — smell the food!" }
+      ]
+    },
+    {
+      "id": "sigma",
+      "name": "Sigma Auditorium",
+      "shortName": "Sigma Hall",
+      "icon": "🎭",
+      "description": "The iconic Sigma Auditorium, capacity 2000. Hosts convocations, symposiums and cultural events.",
+      "category": "Event",
+      "floor": "Ground",
+      "coordinates": { "x": 30, "y": 70 },
+      "color": "#3a86ff",
+      "steps": [
+        { "instruction": "Walk straight from the entrance", "direction": "straight", "distance": "50m", "landmark": "Main road inside campus" },
+        { "instruction": "Turn left at the first junction", "direction": "left", "distance": "60m", "landmark": "Junction with lamp post" },
+        { "instruction": "Continue straight past the garden", "direction": "straight", "distance": "80m", "landmark": "Decorative garden on right" },
+        { "instruction": "Sigma Auditorium is on your left", "direction": "arrived", "distance": "0m", "landmark": "Large auditorium with Sigma sign" }
+      ]
+    },
+    {
+      "id": "reception",
+      "name": "Reception / Admin Office",
+      "shortName": "Reception",
+      "icon": "🏨",
+      "description": "Main administrative office, visitor registration, and information center for Sri Sairam campus.",
+      "category": "Admin",
+      "floor": "Ground",
+      "coordinates": { "x": 50, "y": 50 },
+      "color": "#06d6a0",
+      "steps": [
+        { "instruction": "Enter through the main gate", "direction": "straight", "distance": "30m", "landmark": "Security checkpoint" },
+        { "instruction": "The reception is directly ahead", "direction": "straight", "distance": "40m", "landmark": "Large reception board visible" },
+        { "instruction": "You have arrived at the Reception", "direction": "arrived", "distance": "0m", "landmark": "Reception counter open 24/7" }
+      ]
+    }
+  ]
+}
