@@ -45,3 +45,9 @@ export function useCamera() {
     }
     cameraActive.value = false
     cameraMode.value = 'simulated'
+  }
+
+  onUnmounted(() => stopCamera())
+
+  return { videoRef, cameraActive, cameraError, cameraMode, startCamera, stopCamera }
+}
