@@ -5,7 +5,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "vercel-build": "npm run build",
     "preview": "vite preview"
+  },
+  "engines": {
+    "node": ">=18.0.0 <21.0.0"
   },
   "dependencies": {
     "vue": "^3.4.0"
