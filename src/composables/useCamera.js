@@ -1,4 +1,4 @@
-import { ref, onUnmounted } from 'vue'
+import { ref, onUnmounted, nextTick } from 'vue'
 
 export function useCamera() {
   const videoRef = ref(null)
@@ -19,11 +19,12 @@ export function useCamera() {
         audio: false
       })
       streamRef.value = stream
+      cameraMode.value = 'live'
+      await nextTick()
       if (videoRef.value) {
         videoRef.value.srcObject = stream
         await videoRef.value.play()
       }
-      cameraMode.value = 'live'
       cameraActive.value = true
       cameraError.value = null
     } catch (err) {
@@ -43,9 +44,4 @@ export function useCamera() {
       videoRef.value.srcObject = null
     }
     cameraActive.value = false
-  }
-
-  onUnmounted(() => stopCamera())
-
-  return { videoRef, cameraActive, cameraError, cameraMode, startCamera, stopCamera }
-}
+    cameraMode.value = 'simulated'
